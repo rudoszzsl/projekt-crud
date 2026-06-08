@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Hotel Kraków Plaza",   "city": "Kraków",     "stars": 5, "pricePerNight": 450, "hasPool": true  },
+  { "id": 2, "name": "Pensjonat Morski",     "city": "Gdańsk",     "stars": 3, "pricePerNight": 180, "hasPool": false },
+  { "id": 3, "name": "Willa Zakopane",       "city": "Zakopane",   "stars": 4, "pricePerNight": 320, "hasPool": true  },
+  { "id": 4, "name": "City Hotel Warszawa",  "city": "Warszawa",   "stars": 4, "pricePerNight": 390, "hasPool": false },
+  { "id": 5, "name": "Resort Mazury",        "city": "Mikołajki",  "stars": 3, "pricePerNight": 220, "hasPool": true  }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "React od podstaw",        "instructor": "Jan Kowalski",   "duration": 12, "price": 199, "level": "beginner",     "isPopular": true  },
+  { "id": 2, "title": "Python dla Data Science", "instructor": "Anna Nowak",     "duration": 20, "price": 299, "level": "intermediate", "isPopular": true  },
+  { "id": 3, "title": "Docker i Kubernetes",     "instructor": "Piotr Wiśniak",  "duration": 8,  "price": 149, "level": "advanced",     "isPopular": false },
+  { "id": 4, "title": "UI/UX Design",            "instructor": "Kasia Maj",      "duration": 15, "price": 249, "level": "beginner",     "isPopular": false },
+  { "id": 5, "title": "Machine Learning",        "instructor": "Marek Bąk",      "duration": 25, "price": 399, "level": "advanced",     "isPopular": true  }
+]

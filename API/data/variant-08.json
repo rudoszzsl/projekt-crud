@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "Frontend Developer", "company": "TechCorp",    "salary": 12000, "isRemote": true,  "isUrgent": false },
+  { "id": 2, "title": "UX Designer",        "company": "DesignStudio","salary": 9500,  "isRemote": false, "isUrgent": true  },
+  { "id": 3, "title": "DevOps Engineer",    "company": "CloudSys",    "salary": 15000, "isRemote": true,  "isUrgent": false },
+  { "id": 4, "title": "Project Manager",    "company": "AgencjaIT",   "salary": 11000, "isRemote": false, "isUrgent": true  },
+  { "id": 5, "title": "Data Analyst",       "company": "DataHub",     "salary": 10000, "isRemote": true,  "isUrgent": false }
+]

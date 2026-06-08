@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Adam Brzozowski",  "major": "Informatyka", "year": 2, "gpa": 4.8, "hasBursary": true  },
+  { "id": 2, "name": "Beata Dąbrowska",  "major": "Ekonomia",    "year": 3, "gpa": 3.5, "hasBursary": false },
+  { "id": 3, "name": "Cezary Felski",    "major": "Informatyka", "year": 1, "gpa": 5.0, "hasBursary": true  },
+  { "id": 4, "name": "Diana Górecka",    "major": "Prawo",       "year": 4, "gpa": 3.2, "hasBursary": false },
+  { "id": 5, "name": "Emil Hawrot",      "major": "Informatyka", "year": 2, "gpa": 4.1, "hasBursary": true  }
+]

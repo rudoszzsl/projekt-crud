@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Trattoria Roma",  "cuisine": "włoska",    "rating": 4.8, "priceRange": "$$",  "isOpen": true  },
+  { "id": 2, "name": "Sushi Zen",       "cuisine": "japońska",  "rating": 4.5, "priceRange": "$$$", "isOpen": true  },
+  { "id": 3, "name": "Bistro Polskie",  "cuisine": "polska",    "rating": 4.1, "priceRange": "$",   "isOpen": false },
+  { "id": 4, "name": "Burger House",    "cuisine": "american",  "rating": 3.9, "priceRange": "$",   "isOpen": true  },
+  { "id": 5, "name": "Le Petit Paris",  "cuisine": "francuska", "rating": 4.6, "priceRange": "$$$", "isOpen": false }
+]

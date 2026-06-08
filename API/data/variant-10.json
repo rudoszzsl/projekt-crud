@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "FitZone Poznań",
+    "type": "siłownia",
+    "monthlyFee": 120,
+    "hasPool": false,
+    "isOpen24h": true
+  },
+  {
+    "id": 2,
+    "name": "AquaCenter",
+    "type": "basen",
+    "monthlyFee": 180,
+    "hasPool": true,
+    "isOpen24h": false
+  },
+  {
+    "id": 3,
+    "name": "CrossFit Elite",
+    "type": "crossfit",
+    "monthlyFee": 200,
+    "hasPool": false,
+    "isOpen24h": false
+  },
+  {
+    "id": 4,
+    "name": "SportMax",
+    "type": "siłownia",
+    "monthlyFee": 90,
+    "hasPool": true,
+    "isOpen24h": true
+  },
+  {
+    "id": 5,
+    "name": "Yoga & Wellness",
+    "type": "yoga",
+    "monthlyFee": 150,
+    "hasPool": false,
+    "isOpen24h": false
+  }
+]

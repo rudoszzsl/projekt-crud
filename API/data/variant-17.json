@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Paracetamol 500mg",
+    "category": "przeciwbólowy",
+    "price": 8.5,
+    "requiresPrescription": false,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Amoxicillin 250mg",
+    "category": "antybiotyk",
+    "price": 24.99,
+    "requiresPrescription": true,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Ibuprofen 400mg",
+    "category": "przeciwzapalny",
+    "price": 12,
+    "requiresPrescription": false,
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Metformin 850mg",
+    "category": "przeciwcukrzycowy",
+    "price": 18.5,
+    "requiresPrescription": true,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Witamina D3",
+    "category": "suplement",
+    "price": 19.99,
+    "requiresPrescription": false,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "brand": "test",
+    "model": "test",
+    "year": 2030,
+    "mileage": 20,
+    "isAvailable": true
+  },
+  {
+    "id": 7,
+    "brand": "test",
+    "model": "test",
+    "year": 2020,
+    "mileage": 300000,
+    "isAvailable": true
+  }
+]

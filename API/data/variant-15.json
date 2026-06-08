@@ -1,0 +1,7 @@
+[
+  { "id": 1, "address": "ul. Lipowa 12",   "city": "Poznań",  "type": "mieszkanie", "area": 55,  "price": 450000,  "isForSale": true  },
+  { "id": 2, "address": "ul. Słoneczna 8", "city": "Wrocław", "type": "dom",        "area": 120, "price": 890000,  "isForSale": true  },
+  { "id": 3, "address": "ul. Kwiatowa 3",  "city": "Kraków",  "type": "mieszkanie", "area": 38,  "price": 320000,  "isForSale": false },
+  { "id": 4, "address": "ul. Leśna 22",    "city": "Gdańsk",  "type": "dom",        "area": 200, "price": 1200000, "isForSale": true  },
+  { "id": 5, "address": "ul. Zielona 7",   "city": "Warszawa","type": "kawalerka",  "area": 28,  "price": 380000,  "isForSale": false }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "PhotoEdit Pro", "category": "grafika",         "price": 49, "rating": 4.7, "isFree": false },
+  { "id": 2, "name": "TaskManager",   "category": "produktywność",   "price": 0,  "rating": 4.2, "isFree": true  },
+  { "id": 3, "name": "MusicBox",      "category": "muzyka",          "price": 29, "rating": 3.8, "isFree": false },
+  { "id": 4, "name": "CodeHelper",    "category": "programowanie",   "price": 0,  "rating": 4.9, "isFree": true  },
+  { "id": 5, "name": "FitTracker",    "category": "sport",           "price": 19, "rating": 4.5, "isFree": false }
+]

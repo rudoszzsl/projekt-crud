@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Smartwatch Pro",   "brand": "TechBrand",  "price": 599,  "discount": 10, "inStock": true  },
+  { "id": 2, "name": "Słuchawki BT",     "brand": "SoundMax",   "price": 249,  "discount": 0,  "inStock": true  },
+  { "id": 3, "name": "Kamera sportowa",  "brand": "ActionCam",  "price": 899,  "discount": 20, "inStock": false },
+  { "id": 4, "name": "Powerbank 20000",  "brand": "ChargeFast", "price": 149,  "discount": 0,  "inStock": true  },
+  { "id": 5, "name": "Tablet 10\"",      "brand": "TechBrand",  "price": 1299, "discount": 15, "inStock": false }
+]

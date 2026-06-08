@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "Wiedźmin",  "author": "Andrzej Sapkowski", "year": 1990, "genre": "fantasy",  "available": true  },
+  { "id": 2, "title": "1984",      "author": "George Orwell",     "year": 1949, "genre": "dystopia", "available": false },
+  { "id": 3, "title": "Dune",      "author": "Frank Herbert",     "year": 1965, "genre": "sci-fi",   "available": true  },
+  { "id": 4, "title": "Hobbit",    "author": "J.R.R. Tolkien",    "year": 1937, "genre": "fantasy",  "available": false },
+  { "id": 5, "title": "Solaris",   "author": "Stanisław Lem",     "year": 1961, "genre": "sci-fi",   "available": true  }
+]

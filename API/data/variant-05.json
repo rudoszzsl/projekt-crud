@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "Dune: Part Two",              "genre": "sci-fi",  "duration": 166, "rating": 8.5, "isShowing": true  },
+  { "id": 2, "title": "Oppenheimer",                  "genre": "dramat",  "duration": 180, "rating": 8.9, "isShowing": false },
+  { "id": 3, "title": "Spider-Man",                   "genre": "akcja",   "duration": 148, "rating": 7.8, "isShowing": true  },
+  { "id": 4, "title": "Barbie",                       "genre": "komedia", "duration": 114, "rating": 6.9, "isShowing": true  },
+  { "id": 5, "title": "Killers of the Flower Moon",   "genre": "dramat",  "duration": 206, "rating": 7.7, "isShowing": false }
+]

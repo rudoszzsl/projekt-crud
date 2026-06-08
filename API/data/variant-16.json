@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Termostat salon", "type": "termostat", "location": "salon",    "batteryLevel": 85,  "isOnline": true  },
+  { "id": 2, "name": "Czujnik ruchu",   "type": "sensor",    "location": "korytarz", "batteryLevel": 12,  "isOnline": true  },
+  { "id": 3, "name": "Kamera wejście",  "type": "kamera",    "location": "wejście",  "batteryLevel": 100, "isOnline": false },
+  { "id": 4, "name": "Zamek smart",     "type": "zamek",     "location": "drzwi",    "batteryLevel": 67,  "isOnline": true  },
+  { "id": 5, "name": "Czujnik dymu",    "type": "sensor",    "location": "kuchnia",  "batteryLevel": 5,   "isOnline": true  }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Anna Kowalska",    "department": "IT",      "position": "Developer",  "salary": 8500, "isActive": true  },
+  { "id": 2, "name": "Piotr Nowak",      "department": "HR",      "position": "Recruiter",  "salary": 5200, "isActive": false },
+  { "id": 3, "name": "Kasia Wiśniewska", "department": "IT",      "position": "Designer",   "salary": 7100, "isActive": true  },
+  { "id": 4, "name": "Marek Zając",      "department": "Finanse", "position": "Accountant", "salary": 6800, "isActive": true  },
+  { "id": 5, "name": "Ola Kamińska",     "department": "HR",      "position": "Manager",    "salary": 9200, "isActive": false }
+]

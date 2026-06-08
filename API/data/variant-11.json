@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2021,
+    "mileage": 45000,
+    "isAvailable": false
+  },
+  {
+    "id": 2,
+    "brand": "BMW",
+    "model": "320i",
+    "year": 2020,
+    "mileage": 78000,
+    "isAvailable": true
+  },
+  {
+    "id": 3,
+    "brand": "fiat",
+    "model": "testowy",
+    "year": 2000,
+    "mileage": 600000,
+    "isAvailable": false
+  },
+  {
+    "id": 4,
+    "brand": "marka",
+    "model": "model",
+    "year": 2000,
+    "mileage": 1200,
+    "isAvailable": true
+  }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Margherita",          "category": "pizza",   "price": 32, "isVegetarian": true,  "isAvailable": true  },
+  { "id": 2, "name": "Burger klasyczny",    "category": "burger",  "price": 28, "isVegetarian": false, "isAvailable": true  },
+  { "id": 3, "name": "Spaghetti Bolognese", "category": "pasta",   "price": 35, "isVegetarian": false, "isAvailable": false },
+  { "id": 4, "name": "Sałatka grecka",      "category": "sałatka", "price": 22, "isVegetarian": true,  "isAvailable": true  },
+  { "id": 5, "name": "Tiramisu",            "category": "deser",   "price": 18, "isVegetarian": true,  "isAvailable": true  }
+]
