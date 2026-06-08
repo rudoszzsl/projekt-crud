@@ -18,7 +18,7 @@ function CarsPage(){
           try{
             const res = await fetch(API_URL);
             if(!res.ok){
-              throw new Error('Błąd serwera')
+              throw new Error('Server error')
             } 
             const data = await res.json();
             setItems(data);
@@ -52,7 +52,7 @@ function CarsPage(){
           setItems(items.filter(i => i.id !== id))
         }
         catch(err){
-          console.log('Błąd przy operacji DELETE');
+          console.log('Error during DELETE operation');
         }
       }
     
@@ -60,7 +60,7 @@ function CarsPage(){
         try{
           const car = items.find(i => i.id === id);
           if(!car){
-            console.log('Nie ma auta o takim id');
+            console.log('No car with this id');
             return;
           }
     
@@ -88,7 +88,7 @@ function CarsPage(){
           setItems(items.map(i => i.id === id ? updated : i)); 
         }
         catch(err){
-          console.log("Wykryto błąd przy operacji PUT", err);
+          console.log("Error during PUT operation", err);
         }
         
       }
@@ -115,7 +115,7 @@ function CarsPage(){
     
 
     <div className="container mt-4 text-start">
-      <h2>Flota firmowa</h2>
+      <h2>Company Fleet</h2>
 
       <SearchBar
         onSearch={setQuery}
@@ -126,7 +126,7 @@ function CarsPage(){
         className='btn btn-primary mb-3'
         onClick={() => setShowForm(prev => !prev)}
       >
-        {showForm ? 'Anuluj' : '+ Dodaj samochód'}
+        {showForm ? 'Cancel' : '+ Add car'}
       </button>
       {showForm && <CarAddForm onAdd={handleAddCar} />}
 
@@ -136,14 +136,14 @@ function CarsPage(){
             <span>{item.brand} - {item.model}</span>
             <div className="d-flex gap-2">
               <Link to={`/item/${item.id}`} className="btn btn-outline-primary btn-sm">
-                Szczegóły
+                Details
               </Link>
               <button 
                 className={`btn btn-sm ${item.isAvailable ? 'btn-success' : 'btn-danger'}`} 
                 onClick={() => handleUpdate(item.id)}>
-                {item.isAvailable ? 'Dostępny' : 'Zajęty'}
+                {item.isAvailable ? 'Available' : 'In use'}
               </button>
-              <button className="btn btn-outline-danger btn-sm" onClick={() => handleDelete(item.id)}>Usuń</button>
+              <button className="btn btn-outline-danger btn-sm" onClick={() => handleDelete(item.id)}>Delete</button>
             </div>
           </li>
         ))}

@@ -26,33 +26,33 @@ function nextId(data) {
   return data.length === 0 ? 1 : Math.max(...data.map(i => i.id)) + 1
 }
 
-// GET /api/:variant/items — lista wszystkich
+// GET /api/:variant/items — list all items
 app.get('/api/:variant/items', (req, res) => {
   const filePath = getFilePath(req.params.variant)
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: `Wariant ${req.params.variant} nie istnieje` })
+    return res.status(404).json({ error: `Variant ${req.params.variant} does not exist` })
   }
   res.json(readData(filePath))
 })
 
-// GET /api/:variant/items/:id — jeden element
+// GET /api/:variant/items/:id — single item
 app.get('/api/:variant/items/:id', (req, res) => {
   const filePath = getFilePath(req.params.variant)
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: `Wariant ${req.params.variant} nie istnieje` })
+    return res.status(404).json({ error: `Variant ${req.params.variant} does not exist` })
   }
   const item = readData(filePath).find(i => i.id === Number(req.params.id))
   if (!item) {
-    return res.status(404).json({ error: `Element o id ${req.params.id} nie istnieje` })
+    return res.status(404).json({ error: `Item with id ${req.params.id} does not exist` })
   }
   res.json(item)
 })
 
-// POST /api/:variant/items — dodaj nowy element
+// POST /api/:variant/items — create a new item
 app.post('/api/:variant/items', (req, res) => {
   const filePath = getFilePath(req.params.variant)
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: `Wariant ${req.params.variant} nie istnieje` })
+    return res.status(404).json({ error: `Variant ${req.params.variant} does not exist` })
   }
   const data = readData(filePath)
   const newItem = { id: nextId(data), ...req.body }
@@ -61,32 +61,32 @@ app.post('/api/:variant/items', (req, res) => {
   res.status(201).json(newItem)
 })
 
-// PUT /api/:variant/items/:id — zaktualizuj element
+// PUT /api/:variant/items/:id — update an item
 app.put('/api/:variant/items/:id', (req, res) => {
   const filePath = getFilePath(req.params.variant)
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: `Wariant ${req.params.variant} nie istnieje` })
+    return res.status(404).json({ error: `Variant ${req.params.variant} does not exist` })
   }
   const data = readData(filePath)
   const index = data.findIndex(i => i.id === Number(req.params.id))
   if (index === -1) {
-    return res.status(404).json({ error: `Element o id ${req.params.id} nie istnieje` })
+    return res.status(404).json({ error: `Item with id ${req.params.id} does not exist` })
   }
   data[index] = { ...data[index], ...req.body, id: data[index].id }
   saveData(filePath, data)
   res.json(data[index])
 })
 
-// DELETE /api/:variant/items/:id — usuń element
+// DELETE /api/:variant/items/:id — delete an item
 app.delete('/api/:variant/items/:id', (req, res) => {
   const filePath = getFilePath(req.params.variant)
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: `Wariant ${req.params.variant} nie istnieje` })
+    return res.status(404).json({ error: `Variant ${req.params.variant} does not exist` })
   }
   const data = readData(filePath)
   const index = data.findIndex(i => i.id === Number(req.params.id))
   if (index === -1) {
-    return res.status(404).json({ error: `Element o id ${req.params.id} nie istnieje` })
+    return res.status(404).json({ error: `Item with id ${req.params.id} does not exist` })
   }
   const deleted = data.splice(index, 1)[0]
   saveData(filePath, data)

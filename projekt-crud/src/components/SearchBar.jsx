@@ -4,7 +4,7 @@ function SearchBar({ onSearch, onOnlyAvailableChange }) {
         <input
           type="text"
           className="form-control"
-          placeholder="Szukaj po marce..."
+          placeholder="Search by brand..."
           onChange={(e) => onSearch(e.target.value)}
         />
         <div className="form-check mt-2">
@@ -15,7 +15,7 @@ function SearchBar({ onSearch, onOnlyAvailableChange }) {
             onChange={(e) => onOnlyAvailableChange(e.target.checked)}
           />
           <label className="form-check-label" htmlFor="onlyAvailable">
-            Pokaż tylko dostępne
+            Show available only
           </label>
         </div>
       </div>

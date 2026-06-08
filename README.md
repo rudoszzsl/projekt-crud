@@ -1,26 +1,26 @@
-# Projekt CRUD — React + REST API
+# CRUD Project — React + REST API
 
-Projekt demonstracyjny typu **CRUD** zrealizowany w **React**, stworzony w celu zaprezentowania umiejętności tworzenia własnego **REST API** oraz korzystania z niego po stronie frontendu.
+A demo **CRUD** application built with **React**, created to showcase building a custom **REST API** and consuming it from the frontend.
 
-Aplikacja zarządza flotą samochodów firmowych — umożliwia:
+The app manages a company car fleet and supports:
 
-- przeglądanie listy pojazdów,
-- dodawanie nowych rekordów,
-- edycję danych,
-- usuwanie pojazdów,
-- wyszukiwanie,
-- filtrowanie wyników.
+- browsing the vehicle list,
+- adding new records,
+- editing data,
+- deleting vehicles,
+- search,
+- filtering results.
 
 ---
 
-## Technologie
+## Tech Stack
 
 ### Backend (API)
 
 - Node.js
 - Express
 - CORS
-- Przechowywanie danych w plikach JSON
+- JSON file storage
 
 ### Frontend
 
@@ -31,59 +31,59 @@ Aplikacja zarządza flotą samochodów firmowych — umożliwia:
 
 ---
 
-## 📁 Struktura projektu
+## Project Structure
 
 ```text
 projekt-crud/
 │
 ├── API/                                 # Backend — REST API
-│   ├── server.js                        # Serwer Express z endpointami CRUD
-│   ├── data/                            # Pliki JSON z danymi
+│   ├── server.js                        # Express server with CRUD endpoints
+│   ├── data/                            # JSON data files
 │   │   ├── variant-01.json
 │   │   ├── variant-02.json
 │   │   ├── ...
-│   │   └── variant-11.json              # Wariant używany przez nas
+│   │   └── variant-11.json              # Variant used by the frontend
 │   ├── package.json
 │   └── package-lock.json
 │
-└── projekt-crud/                        # Frontend — aplikacja React
-    ├── public/                          # Pliki statyczne serwowane bezpośrednio
-    │   ├── favicon.svg                  # Ikona zakładki przeglądarki
+└── projekt-crud/                        # Frontend — React app
+    ├── public/                          # Static assets
+    │   ├── favicon.svg                  # Browser tab icon
     │   └── icons.svg
     │
-    ├── src/                             # Kod źródłowy aplikacji
-    │   ├── main.jsx                     # Punkt wejścia — montuje React + Router + Bootstrap
-    │   ├── App.jsx                      # Główny komponent — nawigacja i routing
-    │   ├── App.css                      # Style komponentu App
-    │   ├── index.css                    # Globalne style aplikacji
+    ├── src/                             # Application source code
+    │   ├── main.jsx                     # Entry point — mounts React + Router + Bootstrap
+    │   ├── App.jsx                      # Root component — navigation and routing
+    │   ├── App.css                      # App component styles
+    │   ├── index.css                    # Global styles
     │   │
-    │   ├── components/                  # Komponenty React
-    │   │   ├── CarsPage.jsx             # Lista aut — GET, POST, PUT, DELETE
-    │   │   ├── CarAddForm.jsx           # Formularz dodawania nowego pojazdu
-    │   │   ├── CarDetailPage.jsx        # Szczegóły pojazdu — GET po id
-    │   │   └── SearchBar.jsx            # Wyszukiwarka i filtr dostępności
+    │   ├── components/                  # React components
+    │   │   ├── CarsPage.jsx             # Car list — GET, POST, PUT, DELETE
+    │   │   ├── CarAddForm.jsx           # Form for adding a new vehicle
+    │   │   ├── CarDetailPage.jsx        # Vehicle details — GET by id
+    │   │   └── SearchBar.jsx            # Search and availability filter
     │   │
-    │   └── assets/                      # Grafiki w bundlu Vite
+    │   └── assets/                      # Vite bundle assets
     │       ├── react.svg
     │       └── vite.svg
     │
-    ├── index.html                       # Szablon HTML — punkt startowy Vite
-    ├── vite.config.js                   # Konfiguracja bundlera Vite
-    ├── eslint.config.js                 # Konfiguracja lintera ESLint
-    ├── package.json                     # Zależności i skrypty npm
+    ├── index.html                       # HTML template — Vite entry point
+    ├── vite.config.js                   # Vite bundler config
+    ├── eslint.config.js                 # ESLint config
+    ├── package.json                     # npm dependencies and scripts
     ├── package-lock.json
-    └── .gitignore                       # Pliki ignorowane przez Git (m.in. node_modules)
+    └── .gitignore                       # Git ignore rules (e.g. node_modules)
 ```
 
 ---
 
-## Uruchomienie projektu
+## Getting Started
 
-Projekt składa się z dwóch części, które należy uruchomić osobno.
+The project consists of two parts that must be run separately.
 
 ### 1. Backend (API)
 
-Otwórz terminal i przejdź do folderu `API`:
+Open a terminal and go to the `API` folder:
 
 ```bash
 cd API
@@ -91,7 +91,7 @@ npm install
 node server.js
 ```
 
-Serwer API uruchomi się pod adresem:
+The API server will start at:
 
 ```text
 http://localhost:3001
@@ -101,7 +101,7 @@ http://localhost:3001
 
 ### 2. Frontend (React)
 
-W drugim terminalu przejdź do folderu z aplikacją React:
+In a second terminal, go to the React app folder:
 
 ```bash
 cd projekt-crud
@@ -109,27 +109,27 @@ npm install
 npm run dev
 ```
 
-Aplikacja będzie dostępna pod adresem wyświetlonym w terminalu (domyślnie):
+The app will be available at the URL shown in the terminal (default):
 
 ```text
 http://localhost:5173
 ```
 
-> **Uwaga:** Najpierw uruchom API, a dopiero potem frontend. Aplikacja React komunikuje się z backendem pod adresem `http://localhost:3001`.
+> **Note:** Start the API first, then the frontend. The React app communicates with the backend at `http://localhost:3001`.
 
 ---
 
-## Endpointy API
+## API Endpoints
 
-| Metoda | Endpoint | Opis |
-|---------|----------|--------|
-| GET | `/api/:variant/items` | Pobierz listę elementów |
-| GET | `/api/:variant/items/:id` | Pobierz pojedynczy element |
-| POST | `/api/:variant/items` | Dodaj nowy element |
-| PUT | `/api/:variant/items/:id` | Zaktualizuj element |
-| DELETE | `/api/:variant/items/:id` | Usuń element |
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/:variant/items` | Fetch all items |
+| GET | `/api/:variant/items/:id` | Fetch a single item |
+| POST | `/api/:variant/items` | Create a new item |
+| PUT | `/api/:variant/items/:id` | Update an item |
+| DELETE | `/api/:variant/items/:id` | Delete an item |
 
-Frontend korzysta z wariantu:
+The frontend uses variant:
 
 ```text
 /api/11/items
@@ -137,25 +137,25 @@ Frontend korzysta z wariantu:
 
 ---
 
-## Funkcjonalności
+## Features
 
-- Wyświetlanie listy samochodów
-- Dodawanie nowych pojazdów
-- Edycja istniejących rekordów
-- Usuwanie pojazdów
-- Podgląd szczegółów pojazdu
-- Wyszukiwanie po marce i modelu
-- Filtrowanie dostępnych pojazdów
+- Display a list of cars
+- Add new vehicles
+- Edit existing records
+- Delete vehicles
+- View vehicle details
+- Search by brand
+- Filter available vehicles
 
 ---
 
-## Cel projektu
+## Project Goals
 
-Celem projektu było zaprezentowanie:
+This project demonstrates:
 
-- tworzenia własnego REST API w Node.js i Express,
-- obsługi żądań HTTP (GET, POST, PUT, DELETE),
-- komunikacji frontend ↔ backend,
-- pracy z React Router,
-- zarządzania stanem komponentów React,
-- budowy kompletnej aplikacji CRUD.
+- building a custom REST API with Node.js and Express,
+- handling HTTP requests (GET, POST, PUT, DELETE),
+- frontend ↔ backend communication,
+- working with React Router,
+- managing React component state,
+- building a complete CRUD application.

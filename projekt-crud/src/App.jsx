@@ -9,7 +9,7 @@ function App() {
     <>
     <div>
       <nav className='navbar navbar-dark bg-dark px-4 mb-4'>
-        <Link className='navbar-brand' to='/'>Flota firmowa</Link>
+        <Link className='navbar-brand' to='/'>Company Fleet</Link>
       </nav>
       <div className="container">
         <Routes>
